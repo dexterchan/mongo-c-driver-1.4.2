@@ -1,0 +1,144 @@
+Determining if the snprintf exist failed with the following output:
+Change Dir: C:/download/mongo-c-driver-1.4.2/src/libbson/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_b85a8.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=10.0"
+Microsoft (R) Build Engine version 4.6.1055.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 10/8/2016 7:16:47 AM.
+Project "C:\download\mongo-c-driver-1.4.2\src\libbson\CMakeFiles\CMakeTmp\cmTC_b85a8.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_b85a8.dir\Debug\".
+  Creating directory "C:\download\mongo-c-driver-1.4.2\src\libbson\CMakeFiles\CMakeTmp\Debug\".
+InitializeBuildStatus:
+  Creating "cmTC_b85a8.dir\Debug\cmTC_b85a8.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_b85a8.dir\Debug\\" /Fd"cmTC_b85a8.dir\Debug\vc100.pdb" /Gd /TC /errorReport:queue CheckSymbolExists.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 16.00.30319.01 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_b85a8.dir\Debug\\" /Fd"cmTC_b85a8.dir\Debug\vc100.pdb" /Gd /TC /errorReport:queue CheckSymbolExists.c
+  
+  CheckSymbolExists.c
+CheckSymbolExists.c(8): error C2065: 'snprintf' : undeclared identifier [C:\download\mongo-c-driver-1.4.2\src\libbson\CMakeFiles\CMakeTmp\cmTC_b85a8.vcxproj]
+Done Building Project "C:\download\mongo-c-driver-1.4.2\src\libbson\CMakeFiles\CMakeTmp\cmTC_b85a8.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\download\mongo-c-driver-1.4.2\src\libbson\CMakeFiles\CMakeTmp\cmTC_b85a8.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  CheckSymbolExists.c(8): error C2065: 'snprintf' : undeclared identifier [C:\download\mongo-c-driver-1.4.2\src\libbson\CMakeFiles\CMakeTmp\cmTC_b85a8.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.15
+
+File C:/download/mongo-c-driver-1.4.2/src/libbson/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef snprintf
+  return ((int*)(&snprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function reallocf exists failed with the following output:
+Change Dir: C:/download/mongo-c-driver-1.4.2/src/libbson/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_ad65e.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=10.0"
+Microsoft (R) Build Engine version 4.6.1055.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 10/8/2016 7:16:47 AM.
+Project "C:\download\mongo-c-driver-1.4.2\src\libbson\CMakeFiles\CMakeTmp\cmTC_ad65e.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_ad65e.dir\Debug\".
+  Creating directory "C:\download\mongo-c-driver-1.4.2\src\libbson\CMakeFiles\CMakeTmp\Debug\".
+InitializeBuildStatus:
+  Creating "cmTC_ad65e.dir\Debug\cmTC_ad65e.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=reallocf /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_ad65e.dir\Debug\\" /Fd"cmTC_ad65e.dir\Debug\vc100.pdb" /Gd /TC /errorReport:queue "..\..\..\..\..\..\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 16.00.30319.01 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=reallocf /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_ad65e.dir\Debug\\" /Fd"cmTC_ad65e.dir\Debug\vc100.pdb" /Gd /TC /errorReport:queue "..\..\..\..\..\..\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+ManifestResourceCompile:
+  c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTC_ad65e.dir\Debug\cmTC_ad65e.exe.embed.manifest.res" cmTC_ad65e.dir\Debug\cmTC_ad65e_manifest.rc 
+Link:
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\download\mongo-c-driver-1.4.2\src\libbson\CMakeFiles\CMakeTmp\Debug\cmTC_ad65e.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTC_ad65e.dir\Debug\cmTC_ad65e.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/download/mongo-c-driver-1.4.2/src/libbson/CMakeFiles/CMakeTmp/Debug/cmTC_ad65e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/download/mongo-c-driver-1.4.2/src/libbson/CMakeFiles/CMakeTmp/Debug/cmTC_ad65e.lib" /MACHINE:X64 cmTC_ad65e.dir\Debug\cmTC_ad65e.exe.embed.manifest.res
+  cmTC_ad65e.dir\Debug\CheckFunctionExists.obj  /machine:x64 
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol reallocf referenced in function main [C:\download\mongo-c-driver-1.4.2\src\libbson\CMakeFiles\CMakeTmp\cmTC_ad65e.vcxproj]
+C:\download\mongo-c-driver-1.4.2\src\libbson\CMakeFiles\CMakeTmp\Debug\cmTC_ad65e.exe : fatal error LNK1120: 1 unresolved externals [C:\download\mongo-c-driver-1.4.2\src\libbson\CMakeFiles\CMakeTmp\cmTC_ad65e.vcxproj]
+Done Building Project "C:\download\mongo-c-driver-1.4.2\src\libbson\CMakeFiles\CMakeTmp\cmTC_ad65e.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\download\mongo-c-driver-1.4.2\src\libbson\CMakeFiles\CMakeTmp\cmTC_ad65e.vcxproj" (default target) (1) ->
+(Link target) -> 
+  CheckFunctionExists.obj : error LNK2019: unresolved external symbol reallocf referenced in function main [C:\download\mongo-c-driver-1.4.2\src\libbson\CMakeFiles\CMakeTmp\cmTC_ad65e.vcxproj]
+  C:\download\mongo-c-driver-1.4.2\src\libbson\CMakeFiles\CMakeTmp\Debug\cmTC_ad65e.exe : fatal error LNK1120: 1 unresolved externals [C:\download\mongo-c-driver-1.4.2\src\libbson\CMakeFiles\CMakeTmp\cmTC_ad65e.vcxproj]
+
+    0 Warning(s)
+    2 Error(s)
+
+Time Elapsed 00:00:00.23
+
+
+Performing C SOURCE FILE Test BSON_HAVE_TIMESPEC failed with the following output:
+Change Dir: C:/download/mongo-c-driver-1.4.2/src/libbson/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_d0114.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=10.0"
+Microsoft (R) Build Engine version 4.6.1055.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 10/8/2016 7:16:48 AM.
+Project "C:\download\mongo-c-driver-1.4.2\src\libbson\CMakeFiles\CMakeTmp\cmTC_d0114.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_d0114.dir\Debug\".
+  Creating directory "C:\download\mongo-c-driver-1.4.2\src\libbson\CMakeFiles\CMakeTmp\Debug\".
+InitializeBuildStatus:
+  Creating "cmTC_d0114.dir\Debug\cmTC_d0114.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D BSON_HAVE_TIMESPEC /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_d0114.dir\Debug\\" /Fd"cmTC_d0114.dir\Debug\vc100.pdb" /Gd /TC /errorReport:queue src.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 16.00.30319.01 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D BSON_HAVE_TIMESPEC /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_d0114.dir\Debug\\" /Fd"cmTC_d0114.dir\Debug\vc100.pdb" /Gd /TC /errorReport:queue src.c
+  
+  src.c
+src.c(6): error C2037: left of 'tv_sec' specifies undefined struct/union 'timespec' [C:\download\mongo-c-driver-1.4.2\src\libbson\CMakeFiles\CMakeTmp\cmTC_d0114.vcxproj]
+Done Building Project "C:\download\mongo-c-driver-1.4.2\src\libbson\CMakeFiles\CMakeTmp\cmTC_d0114.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\download\mongo-c-driver-1.4.2\src\libbson\CMakeFiles\CMakeTmp\cmTC_d0114.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  src.c(6): error C2037: left of 'tv_sec' specifies undefined struct/union 'timespec' [C:\download\mongo-c-driver-1.4.2\src\libbson\CMakeFiles\CMakeTmp\cmTC_d0114.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.15
+
+Source file was:
+
+#include <time.h>
+
+int main()
+{
+   (void)sizeof(((struct timespec *)0)->tv_sec);
+   return 0;
+}
+

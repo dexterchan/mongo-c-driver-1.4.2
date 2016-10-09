@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{535FE7D6-4860-3D75-A655-2A814F69E42A}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>mongoc-ping</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\download\mongo-c-driver-1.4.2\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mongoc-ping.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mongoc-ping</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\download\mongo-c-driver-1.4.2\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mongoc-ping.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mongoc-ping</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\download\mongo-c-driver-1.4.2\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">mongoc-ping.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">mongoc-ping</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\download\mongo-c-driver-1.4.2\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">mongoc-ping.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">mongoc-ping</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\download\mongo-c-driver-1.4.2\src\mongoc;C:\mongo-c-driver\include\libbson-1.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;_GNU_SOURCE;_BSD_SOURCE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;_GNU_SOURCE;_BSD_SOURCE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\download\mongo-c-driver-1.4.2\src\mongoc;C:\mongo-c-driver\include\libbson-1.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\download\mongo-c-driver-1.4.2\src\mongoc;C:\mongo-c-driver\include\libbson-1.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;Debug\mongoc-1.0.lib;shlwapi.lib;C:\mongo-c-driver\lib\bson-1.0.lib;ws2_32.lib;secur32.lib;crypt32.lib;Bcrypt.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/download/mongo-c-driver-1.4.2/Debug/mongoc-ping.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/download/mongo-c-driver-1.4.2/Debug/mongoc-ping.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\download\mongo-c-driver-1.4.2\src\mongoc;C:\mongo-c-driver\include\libbson-1.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_GNU_SOURCE;_BSD_SOURCE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_GNU_SOURCE;_BSD_SOURCE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\download\mongo-c-driver-1.4.2\src\mongoc;C:\mongo-c-driver\include\libbson-1.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\download\mongo-c-driver-1.4.2\src\mongoc;C:\mongo-c-driver\include\libbson-1.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;Release\mongoc-1.0.lib;shlwapi.lib;C:\mongo-c-driver\lib\bson-1.0.lib;ws2_32.lib;secur32.lib;crypt32.lib;Bcrypt.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/download/mongo-c-driver-1.4.2/Release/mongoc-ping.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/download/mongo-c-driver-1.4.2/Release/mongoc-ping.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\download\mongo-c-driver-1.4.2\src\mongoc;C:\mongo-c-driver\include\libbson-1.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_GNU_SOURCE;_BSD_SOURCE;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_GNU_SOURCE;_BSD_SOURCE;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\download\mongo-c-driver-1.4.2\src\mongoc;C:\mongo-c-driver\include\libbson-1.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\download\mongo-c-driver-1.4.2\src\mongoc;C:\mongo-c-driver\include\libbson-1.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;MinSizeRel\mongoc-1.0.lib;shlwapi.lib;C:\mongo-c-driver\lib\bson-1.0.lib;ws2_32.lib;secur32.lib;crypt32.lib;Bcrypt.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/download/mongo-c-driver-1.4.2/MinSizeRel/mongoc-ping.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/download/mongo-c-driver-1.4.2/MinSizeRel/mongoc-ping.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\download\mongo-c-driver-1.4.2\src\mongoc;C:\mongo-c-driver\include\libbson-1.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_GNU_SOURCE;_BSD_SOURCE;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_GNU_SOURCE;_BSD_SOURCE;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\download\mongo-c-driver-1.4.2\src\mongoc;C:\mongo-c-driver\include\libbson-1.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\download\mongo-c-driver-1.4.2\src\mongoc;C:\mongo-c-driver\include\libbson-1.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;RelWithDebInfo\mongoc-1.0.lib;shlwapi.lib;C:\mongo-c-driver\lib\bson-1.0.lib;ws2_32.lib;secur32.lib;crypt32.lib;Bcrypt.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/download/mongo-c-driver-1.4.2/RelWithDebInfo/mongoc-ping.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/download/mongo-c-driver-1.4.2/RelWithDebInfo/mongoc-ping.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/download/mongo-c-driver-1.4.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/download/mongo-c-driver-1.4.2 -BC:/download/mongo-c-driver-1.4.2 --check-stamp-file C:\download\mongo-c-driver-1.4.2\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/download/mongo-c-driver-1.4.2/CMakeLists.txt;C:\download\mongo-c-driver-1.4.2\CMakeLists.txt;C:\download\mongo-c-driver-1.4.2\CMakeFiles\3.6.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInitialize.cmake;C:\download\mongo-c-driver-1.4.2\CMakeFiles\3.6.2\CMakeCCompiler.cmake;C:\download\mongo-c-driver-1.4.2\CMakeFiles\3.6.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;C:\download\mongo-c-driver-1.4.2\CMakeFiles\3.6.2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\InstallRequiredSystemLibraries.cmake;C:\download\mongo-c-driver-1.4.2\build\cmake\FindBSON.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\download\mongo-c-driver-1.4.2\build\cmake\FindSASL2.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckIncludeFiles.cmake;C:\download\mongo-c-driver-1.4.2\build\cmake\LoadVersion.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.6\Templates\CPackConfig.cmake.in;C:\Program Files\CMake\share\cmake-3.6\Templates\CPackConfig.cmake.in;C:\download\mongo-c-driver-1.4.2\src\mongoc\mongoc-config.h.in;C:\download\mongo-c-driver-1.4.2\src\mongoc\mongoc-version.h.in;C:\download\mongo-c-driver-1.4.2\src\libmongoc-1.0.pc.in;C:\download\mongo-c-driver-1.4.2\src\libmongoc-ssl-1.0.pc.in;C:\download\mongo-c-driver-1.4.2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\download\mongo-c-driver-1.4.2\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/download/mongo-c-driver-1.4.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/download/mongo-c-driver-1.4.2 -BC:/download/mongo-c-driver-1.4.2 --check-stamp-file C:\download\mongo-c-driver-1.4.2\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/download/mongo-c-driver-1.4.2/CMakeLists.txt;C:\download\mongo-c-driver-1.4.2\CMakeLists.txt;C:\download\mongo-c-driver-1.4.2\CMakeFiles\3.6.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInitialize.cmake;C:\download\mongo-c-driver-1.4.2\CMakeFiles\3.6.2\CMakeCCompiler.cmake;C:\download\mongo-c-driver-1.4.2\CMakeFiles\3.6.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;C:\download\mongo-c-driver-1.4.2\CMakeFiles\3.6.2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\InstallRequiredSystemLibraries.cmake;C:\download\mongo-c-driver-1.4.2\build\cmake\FindBSON.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\download\mongo-c-driver-1.4.2\build\cmake\FindSASL2.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckIncludeFiles.cmake;C:\download\mongo-c-driver-1.4.2\build\cmake\LoadVersion.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.6\Templates\CPackConfig.cmake.in;C:\Program Files\CMake\share\cmake-3.6\Templates\CPackConfig.cmake.in;C:\download\mongo-c-driver-1.4.2\src\mongoc\mongoc-config.h.in;C:\download\mongo-c-driver-1.4.2\src\mongoc\mongoc-version.h.in;C:\download\mongo-c-driver-1.4.2\src\libmongoc-1.0.pc.in;C:\download\mongo-c-driver-1.4.2\src\libmongoc-ssl-1.0.pc.in;C:\download\mongo-c-driver-1.4.2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\download\mongo-c-driver-1.4.2\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/download/mongo-c-driver-1.4.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/download/mongo-c-driver-1.4.2 -BC:/download/mongo-c-driver-1.4.2 --check-stamp-file C:\download\mongo-c-driver-1.4.2\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/download/mongo-c-driver-1.4.2/CMakeLists.txt;C:\download\mongo-c-driver-1.4.2\CMakeLists.txt;C:\download\mongo-c-driver-1.4.2\CMakeFiles\3.6.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInitialize.cmake;C:\download\mongo-c-driver-1.4.2\CMakeFiles\3.6.2\CMakeCCompiler.cmake;C:\download\mongo-c-driver-1.4.2\CMakeFiles\3.6.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;C:\download\mongo-c-driver-1.4.2\CMakeFiles\3.6.2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\InstallRequiredSystemLibraries.cmake;C:\download\mongo-c-driver-1.4.2\build\cmake\FindBSON.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\download\mongo-c-driver-1.4.2\build\cmake\FindSASL2.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckIncludeFiles.cmake;C:\download\mongo-c-driver-1.4.2\build\cmake\LoadVersion.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.6\Templates\CPackConfig.cmake.in;C:\Program Files\CMake\share\cmake-3.6\Templates\CPackConfig.cmake.in;C:\download\mongo-c-driver-1.4.2\src\mongoc\mongoc-config.h.in;C:\download\mongo-c-driver-1.4.2\src\mongoc\mongoc-version.h.in;C:\download\mongo-c-driver-1.4.2\src\libmongoc-1.0.pc.in;C:\download\mongo-c-driver-1.4.2\src\libmongoc-ssl-1.0.pc.in;C:\download\mongo-c-driver-1.4.2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\download\mongo-c-driver-1.4.2\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/download/mongo-c-driver-1.4.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/download/mongo-c-driver-1.4.2 -BC:/download/mongo-c-driver-1.4.2 --check-stamp-file C:\download\mongo-c-driver-1.4.2\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/download/mongo-c-driver-1.4.2/CMakeLists.txt;C:\download\mongo-c-driver-1.4.2\CMakeLists.txt;C:\download\mongo-c-driver-1.4.2\CMakeFiles\3.6.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInitialize.cmake;C:\download\mongo-c-driver-1.4.2\CMakeFiles\3.6.2\CMakeCCompiler.cmake;C:\download\mongo-c-driver-1.4.2\CMakeFiles\3.6.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;C:\download\mongo-c-driver-1.4.2\CMakeFiles\3.6.2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\InstallRequiredSystemLibraries.cmake;C:\download\mongo-c-driver-1.4.2\build\cmake\FindBSON.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\download\mongo-c-driver-1.4.2\build\cmake\FindSASL2.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckIncludeFiles.cmake;C:\download\mongo-c-driver-1.4.2\build\cmake\LoadVersion.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.6\Templates\CPackConfig.cmake.in;C:\Program Files\CMake\share\cmake-3.6\Templates\CPackConfig.cmake.in;C:\download\mongo-c-driver-1.4.2\src\mongoc\mongoc-config.h.in;C:\download\mongo-c-driver-1.4.2\src\mongoc\mongoc-version.h.in;C:\download\mongo-c-driver-1.4.2\src\libmongoc-1.0.pc.in;C:\download\mongo-c-driver-1.4.2\src\libmongoc-ssl-1.0.pc.in;C:\download\mongo-c-driver-1.4.2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\download\mongo-c-driver-1.4.2\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="examples\mongoc-ping.c"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/download/mongo-c-driver-1.4.2/ZERO_CHECK.vcxproj">
+      <Project>DF71CBFD-8FD7-3973-A956-37CA96E18A27</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/download/mongo-c-driver-1.4.2/mongoc_shared.vcxproj">
+      <Project>4614D57B-49B4-3EBB-A9FA-248FA84F4D44</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

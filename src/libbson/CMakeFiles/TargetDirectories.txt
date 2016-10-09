@@ -1,0 +1,8 @@
+C:/download/mongo-c-driver-1.4.2/src/libbson/CMakeFiles/bson_shared.dir
+C:/download/mongo-c-driver-1.4.2/src/libbson/CMakeFiles/INSTALL.dir
+C:/download/mongo-c-driver-1.4.2/src/libbson/CMakeFiles/bson_static.dir
+C:/download/mongo-c-driver-1.4.2/src/libbson/CMakeFiles/PACKAGE.dir
+C:/download/mongo-c-driver-1.4.2/src/libbson/CMakeFiles/RUN_TESTS.dir
+C:/download/mongo-c-driver-1.4.2/src/libbson/CMakeFiles/test-libbson.dir
+C:/download/mongo-c-driver-1.4.2/src/libbson/CMakeFiles/ALL_BUILD.dir
+C:/download/mongo-c-driver-1.4.2/src/libbson/CMakeFiles/ZERO_CHECK.dir

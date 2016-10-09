@@ -1,0 +1,27 @@
+.\" This manpage is Copyright (C) 2016 MongoDB, Inc.
+.\" 
+.\" Permission is granted to copy, distribute and/or modify this document
+.\" under the terms of the GNU Free Documentation License, Version 1.3
+.\" or any later version published by the Free Software Foundation;
+.\" with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+.\" A copy of the license is included in the section entitled "GNU
+.\" Free Documentation License".
+.\" 
+.TH "THREADING" "3" "2016\(hy09\(hy30" "libbson"
+.SH NAME
+Threading \- None
+Libbson is
+.B NOT
+thread\(hysafe, but it is thread\(hyaware. Libbson requires POSIX threads (pthreads) on all UNIX\(hylike platforms. On Windows, the native threading interface is used.
+
+You, the API consumer, are responsible for managing the data\(hystructures in way that results two threads are not mutating at the same time. You may also want to bear in mind your platform may have ordering and consistency concerns that should also be followed.
+
+Libbson used threading primatives for controlling state internal to the library as well as providing atomic fallbacks during
+.B ObjectID
+generation.
+
+
+.B
+.SH COLOPHON
+This page is part of libbson.
+Please report any bugs at https://jira.mongodb.org/browse/CDRIVER.
